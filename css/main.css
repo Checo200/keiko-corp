@@ -631,12 +631,28 @@ a.app_link{
 	background: url('../img/nav_arrow.png.webp') no-repeat;
 	text-indent: -200px;
 	overflow: hidden;
+
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
 }
 
-#tslider .owl-controls .owl-prev{
+
+.no-webp #tslider .owl-controls .owl-prev{
 	background-position: 0 0;
 }
-#tslider .owl-controls .owl-next{
+
+.no-webp #tslider .owl-controls .owl-next{
+	background-position: -33px 0;
+	margin-left: 40px;
+}
+
+.webp #tslider .owl-controls .owl-prev{
+	background-position: 0 0;
+}
+
+.webp #tslider .owl-controls .owl-next{
 	background-position: -33px 0;
 	margin-left: 40px;
 }
