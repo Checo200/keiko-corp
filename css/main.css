@@ -182,7 +182,12 @@ header .social li:first-child{
 }
 
 .webp .hero{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 560px;
 	background: url('../img/hero.jpg.webp') no-repeat fixed center center;
+	background-size: cover;
 }
 
 .hero .caption{
@@ -352,7 +357,14 @@ a.app_link{
 }
 
 .webp .close_video{
+	text-decoration: none;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 50px;
+    right: 50px;
 	background: url('../img/close_video.png.webp') no-repeat;
+	z-index: 9999;
 }
 
 .enhance {
@@ -613,7 +625,12 @@ a.app_link{
 
 .webp #tslider .owl-controls .owl-prev,
 .webp #tslider .owl-controls .owl-next{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
 	background: url('../img/nav_arrow.png.webp') no-repeat;
+	text-indent: -200px;
+	overflow: hidden;
 }
 
 #tslider .owl-controls .owl-prev{
@@ -632,6 +649,7 @@ a.app_link{
 
 .webp #tslider .owl-controls .owl-prev:hover,
 .webp #tslider .owl-controls .owl-next:hover{
+	cursor: pointer;
 	background: url('../img/nav_arrow_hover.png.webp') no-repeat;
 }
 
