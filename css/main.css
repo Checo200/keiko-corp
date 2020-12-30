@@ -172,13 +172,17 @@ header .social li:first-child{
 
 /*		Hero section 		*/
 
-.hero{
+.no-webp .hero{
 	display: block;
 	position: relative;
 	width: 100%;
 	height: 560px;
 	background: url('../img/hero.jpg') no-repeat fixed center center;
 	background-size: cover;
+}
+
+.webp .hero{
+	background: url('../img/hero.jpg.webp') no-repeat fixed center center;
 }
 
 .hero .caption{
@@ -238,16 +242,28 @@ a.app_store_btn{
 	margin-bottom: 3px;
 }
 
-.play_icon{
+.no-webp .play_icon{
 	background: url('../img/play.png') no-repeat;
 }
 
-.iphone_icon{
+.webp .play_icon{
+	background: url('../img/play.png.webp') no-repeat;
+}
+
+.no-webp .iphone_icon{
 	background: url('../img/iphone_app.png') no-repeat;
 }
 
-.android_icon{
+.webp .iphone_icon{
+	background: url('../img/iphone_app.png.webp') no-repeat;
+}
+
+.no-webp .android_icon{
 	background: url('../img/android_app.png') no-repeat;
+}
+
+.webp .android_icon{
+	background: url('../img/android_app.png.webp') no-repeat;
 }
 
 
@@ -257,16 +273,28 @@ a.app_store_btn:focus{
 	color: #41c27d!important;
 }
 
-a.app_store_btn:hover .play_icon{
+.no-webp a.app_store_btn:hover .play_icon{
 	background: url('../img/play_hover.png') no-repeat;
 }
 
-a.app_store_btn:hover .iphone_icon{
+.webp a.app_store_btn:hover .play_icon{
+	background: url('../img/play_hover.png.webp') no-repeat;
+}
+
+.no-webp .app_store_btn:hover .iphone_icon{
 	background: url('../img/iphone_app_hover.png') no-repeat;
 }
 
-a.app_store_btn:hover .android_icon{
+.webp a.app_store_btn:hover .iphone_icon{
+	background: url('../img/iphone_app_hover.png.webp') no-repeat;
+}
+
+.no-webp a.app_store_btn:hover .android_icon{
 	background: url('../img/android_app_hover.png') no-repeat;
+}
+
+.webp a.app_store_btn:hover .android_icon{
+	background: url('../img/android_app_hover.png.webp') no-repeat;
 }
 
 a.app_link{
@@ -312,7 +340,7 @@ a.app_link{
     z-index: 9999;
 }
 
-.close_video{
+.no-webp .close_video{
     text-decoration: none;
     position: absolute;
     width: 38px;
@@ -321,6 +349,10 @@ a.app_link{
     right: 50px;
     background: url('../img/close_video.png') no-repeat;
     z-index: 9999;
+}
+
+.webp .close_video{
+	background: url('../img/close_video.png.webp') no-repeat;
 }
 
 .enhance {
@@ -411,28 +443,54 @@ a.app_link{
 	-webkit-transition: all .2s linear;
 }
 
-.about .features_list ul li.camera_icon{
+.no-webp .about .features_list ul li.camera_icon{
 	background: url('../img/icon1.png') no-repeat;
 	background-position: 0 15px;
 }
 
-.about .features_list ul li.video_icon{
+.webp .about .features_list ul li.camera_icon{
+	background: url('../img/icon1.png.webp') no-repeat;
+	background-position: 0 15px;
+}
+
+.no-webp .about .features_list ul li.video_icon{
 	background: url('../img/icon2.png') no-repeat;
 	background-position: 0 15px;
 }
 
-.about .features_list ul li.eye_icon{
+.webp .about .features_list ul li.video_icon{
+	background: url('../img/icon2.png.webp') no-repeat;
+	background-position: 0 15px;
+}
+
+.no-webp .about .features_list ul li.eye_icon{
 	background: url('../img/icon3.png') no-repeat;
 	background-position: 0 14px;
 }
 
-.about .features_list ul li.pic_icon{
-	background: url('../img/icon4.png') no-repeat;
+.webp .about .features_list ul li.eye_icon{
+	background: url('../img/icon3.png.webp') no-repeat;
 	background-position: 0 14px;
 }
 
-.about .features_list ul li.loc_icon{
+
+.no-webp .about .features_list ul li.pic_icon{
+	background: url('../img/icon4.png.webp') no-repeat;
+	background-position: 0 14px;
+}
+
+.webp .about .features_list ul li.pic_icon{
+	background: url('../img/icon4.png.webp') no-repeat;
+	background-position: 0 14px;
+}
+
+.no-webp .about .features_list ul li.loc_icon{
 	background: url('../img/icon5.png') no-repeat;
+	background-position: 3px 13px;
+}
+
+.webp .about .features_list ul li.loc_icon{
+	background: url('../img/icon5.png.webp') no-repeat;
 	background-position: 3px 13px;
 }
 
@@ -538,8 +596,8 @@ a.app_link{
 	padding: 0;
 }
 
-#tslider .owl-controls .owl-prev,
-#tslider .owl-controls .owl-next{
+.no-webp #tslider .owl-controls .owl-prev,
+.no-webp #tslider .owl-controls .owl-next{
 	display: inline-block;
 	width: 32px;
 	height: 32px;
@@ -553,6 +611,11 @@ a.app_link{
 	-webkit-transition: all .2s linear;
 }
 
+.webp #tslider .owl-controls .owl-prev,
+.webp #tslider .owl-controls .owl-next{
+	background: url('../img/nav_arrow.png.webp') no-repeat;
+}
+
 #tslider .owl-controls .owl-prev{
 	background-position: 0 0;
 }
@@ -561,10 +624,15 @@ a.app_link{
 	margin-left: 40px;
 }
 
-#tslider .owl-controls .owl-prev:hover,
-#tslider .owl-controls .owl-next:hover{
+.no-webp #tslider .owl-controls .owl-prev:hover,
+.no-webp #tslider .owl-controls .owl-next:hover{
 	cursor: pointer;
 	background: url('../img/nav_arrow_hover.png') no-repeat;
+}
+
+.webp #tslider .owl-controls .owl-prev:hover,
+.webp #tslider .owl-controls .owl-next:hover{
+	background: url('../img/nav_arrow_hover.png.webp') no-repeat;
 }
 
 #tslider .owl-controls .owl-prev:hover{
@@ -616,8 +684,6 @@ a.app_link{
 	-o-border-bottom-left-radius: 2px;
 	-moz-border-bottom-left-radius: 2px;
 	-webkit-border-bottom-left-radius: 2px;
-
-
 }
 
 .sub_box #mc_submit{
@@ -650,8 +716,12 @@ a.app_link{
 	vertical-align: middle;
 }
 
-#mc_submit i.icon{
+.no-webp #mc_submit i.icon{
 	background: url('../img/sub_icon.png') no-repeat;
+}
+
+.webp #mc_submit i.icon{
+	background: url('../img/sub_icon.png.webp') no-repeat;
 }
 
 #mc_submit i.loading{
