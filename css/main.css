@@ -669,12 +669,20 @@ a.app_link{
 	background: url('../img/nav_arrow_hover.png.webp') no-repeat;
 }
 
-#tslider .owl-controls .owl-prev:hover{
+.no-webp #tslider .owl-controls .owl-prev:hover{
 	background-position: 0 0;
 }
-#tslider .owl-controls .owl-next:hover{
+.no-webp #tslider .owl-controls .owl-next:hover{
 	background-position: -33px 0;
 }
+
+.webp #tslider .owl-controls .owl-prev:hover{
+	background-position: 0 0;
+}
+.webp #tslider .owl-controls .owl-next:hover{
+	background-position: -33px 0;
+}
+
 
 /*		Subscription section 		*/
 
